@@ -251,12 +251,11 @@ p {
 }
 /* FIN DE SECCION MIS PROYECTOS */
 
-/* INICIO DE SECCION CONTACTAME */
+/* INICIO DE SECCION FORMULARIO */
 .conteiner-contact-write-me {
     display: flex;
     width: 100%;
     height: 900px;
-    background-color: #eb4b06;
     justify-content: center;
     align-items: center;
 }
@@ -267,40 +266,54 @@ p {
     height: 700px;
     background-color: aliceblue;
     flex-direction: row;
+    border-radius: 30px
 }
 
 .contact,
 .write-me {
     width: 50%;
-    background-color: aqua;
     max-width: 1000px;
-
 }
 
 /* INICIO SECCION CONTACTAME */
 .redes-a {
-    width: 20%;
-    display: block;
-    font-size: 1em;
-    padding: 5px 5px;
-    border: 1px solid black;
-    
+    display: flex;
+    width: 24rem;
+    height: 3rem;
+    padding: 0px 8px;
+    border-radius: 100px;
+    align-items: center;
+
 }
 
 .icon-redes {
-    padding-right: 15px;
-    font-size: 20px;
-    color: black;
-
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20rem;
+    margin-right: 10px;
+    align-items: center;
+    transition: 0.4s;
+    text-align: center;
 }
 
-#icon-email-a {
-    width: 55%;
+.redes-a:hover {
+    color: #eb4b06;
+    transition: 10s;
 }
 
 
 .icon-redes:hover {
+    background: #F46F42;
+    border-radius: 100px ;
+    align-items: center;
+    color: white;
+}
 
+.fa-solid fa-envelope {
+    color: aqua;
+}
+
+.icon-redes:hover {
 }
 
 .texto {
@@ -336,7 +349,7 @@ input[placeholder] {
     height: 150px;
 }
 
-/* FIN SECCION ESCRIBEME */
+/* FIN SECCION FORMULARIO */
 
 
 /* FIN DE SECCION CONTACTAME */
