@@ -70,17 +70,16 @@ nav,
 
 
 .hover-color-a:hover {
-    background: #f7763d;
-    border-radius: 30px;
+    color: #f7763d;
 }
 
 .hover-contacto-a {
-    background: #f7763d;
+    background: #eb4b06;
     border-radius: 20px;
 }
 
 .hover-contacto-a:hover {
-    background: whitesmoke;
+    background: #eb6227;
 }
 
 
@@ -124,9 +123,8 @@ p {
 }
 
 .lo-que-hago:hover {
-    background: whitesmoke;
-    transition: 0.5;
-    color: black;
+    background: #eb6227;
+    transition: 2ms;
 
 }
 
@@ -298,22 +296,17 @@ p {
 
 .redes-a:hover {
     color: #eb4b06;
-    transition: 10s;
+    transition: 3ms;
 }
 
-
-.icon-redes:hover {
-    background: #F46F42;
-    border-radius: 100px ;
-    align-items: center;
-    color: white;
-}
-
-.fa-solid fa-envelope {
-    color: aqua;
+.redes-a:hover .icon-redes {
+    background: #eb4b06;
+    transition: 3ms;
 }
 
 .icon-redes:hover {
+    background-color: #eb4b06;
+    transition: 3ms;
 }
 
 .texto {
@@ -347,12 +340,29 @@ input[placeholder] {
     display: block;
     width: 450px;
     height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 18px;
 }
 
-/* FIN SECCION FORMULARIO */
+input[type="text"] {
+    padding: 20px;
+    border-radius: 20px;
+}
 
+input[type="email"] {
+    padding: 20px;
+    border-radius: 20px;
+}
 
-/* FIN DE SECCION CONTACTAME */
+label:active {
+    background: #eb4b06;
+    box-shadow: rgb(230, 62, 6) 0px 5px 15px;
+    transition: 10s;
+}
+/* FIN SECCION  ESCRIBEME  */
+
+/* FIN DE SECCION FORMULARIO */
 
 /* INICIO DE SECCION FOOTER */
 .conteiner-footer {
