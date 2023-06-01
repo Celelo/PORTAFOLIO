@@ -217,7 +217,6 @@ p {
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
-    background-color: azure;
 }
 
 .card-proyectos {
@@ -263,6 +262,7 @@ p {
     width: 80%;
     height: 700px;
     background-color: aliceblue;
+    border: 2px solid #eb4b06;
     flex-direction: row;
     border-radius: 30px
 }
@@ -287,10 +287,9 @@ p {
 .icon-redes {
     padding: 15px;
     border-radius: 50%;
-    font-size: 20rem;
+    font-size: 1em;
     margin-right: 10px;
     align-items: center;
-    transition: 0.4s;
     text-align: center;
 }
 
@@ -302,13 +301,80 @@ p {
 .redes-a:hover .icon-redes {
     background: #eb4b06;
     transition: 3ms;
+    color: aliceblue;
 }
 
-.icon-redes:hover {
-    background-color: #eb4b06;
-    transition: 3ms;
+#red-email:active {
+    transition: 5ms;
+    border: none;
+    width: 23rem;
+    height: 4rem;
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
 }
 
+#red-email:focus {
+    transition: 5ms;
+    border: none;
+    width: 23rem;
+    height: 4rem;
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+}
+
+.redes-a:active {
+    transition: 5ms;
+    border: none;
+    width: 15rem;
+    height: 4rem;
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+}
+
+.redes-a:focus {
+    transition: 1s;
+    border: none;
+    width: 15rem;
+    height: 4rem;
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+}
+
+.fa-linkedin {
+    color: #8807B2;
+    font-size: 1.2em;
+}
+
+.fa-linkedin:hover {
+    color: #fdfcfc;
+    font-size: 1.2em;
+    transition: 1ms;
+}
+
+
+.fa-envelope {
+    color: #8807B2;
+}
+
+.fa-envelope:hover {
+    color: #fdfcfc;
+    transition: 1ms;
+}
+
+.fa-github-alt{
+    color: #8807B2;
+    font-size: 1.3em;
+}
+
+.fa-github-alt:hover {
+    color: #fdfcfc;
+    transition: 1ms;
+}
+
+.fa-discord{
+    color: #8807B2;
+}
+
+.fa-discord:hover {
+    color: #fdfcfc;
+    transition: 1ms;
+}
 .texto {
     margin: 30px 35px;
 }
@@ -335,6 +401,7 @@ input[placeholder] {
     margin: 20px 0px;
     width: 200px;
     height: 30px;
+    border: none;
 }
 #mensaje {
     display: block;
@@ -343,6 +410,14 @@ input[placeholder] {
     padding: 10px;
     border-radius: 20px;
     margin-top: 18px;
+    border: none;
+}
+
+#mensaje:focus {
+    outline: 2px rgb(244 111 66);
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+    border: none;
+    transition: 1ms;
 }
 
 input[type="text"] {
@@ -350,15 +425,45 @@ input[type="text"] {
     border-radius: 20px;
 }
 
+input[type="text"]:focus {
+    outline: 2px rgb(244 111 66);
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+    border: none;
+    transition: 1ms;
+}
+
 input[type="email"] {
     padding: 20px;
     border-radius: 20px;
 }
 
-label:active {
-    background: #eb4b06;
-    box-shadow: rgb(230, 62, 6) 0px 5px 15px;
-    transition: 10s;
+input[type="email"]:focus {
+    outline: 2px rgb(244 111 66);
+    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+    border: none;
+    transition: 1ms;
+}
+
+input:focus {
+    outline: 3px solid #eb4b06;
+    transition: 1ms;
+    border: none;
+    transition: 1ms;
+}
+
+button {
+    padding: 10px 40px;
+    margin-top: 50px;
+    background-color: #F34F29;
+    border-radius: 30px;
+    font-size: 1.3em;
+    border: none;
+}
+
+button:hover {
+    background-color: #F46F42;
+    border: 1px solid #b331df;
+    transition: 1ms;
 }
 /* FIN SECCION  ESCRIBEME  */
 
@@ -368,7 +473,7 @@ label:active {
 .conteiner-footer {
     width: 100%;
     height: 300px;
-    background-color: violet;
+    background-color: aliceblue;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -376,16 +481,28 @@ label:active {
     align-items: center;
 }
 
-.icon-redes {
-    color: #fdfcfc;
-    font-size: 20px;
+.icon-footer {
+    padding: 13px;
+    margin: 10px 15px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #eb4b06;
+    color: white;
+    align-items: center;
+    text-align: center;
 }
 
-ul[class="menu-redes"] {
+i[class*="icon-footer"]:hover {
+    color: #eb4b06;
+    border: 1px solid #8807B2;
+    background-color: white;
+}
+
+ul[class*="menu-redes"] {
     margin: 25px 0px;
 }
 
-ul[class="menu-redes"]:hover {
+ul[class*="menu-redes"]:hover {
 
     border-radius: 100%;
     color: #eb4b06;
