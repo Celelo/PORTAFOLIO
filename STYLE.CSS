@@ -16,12 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-*conteiner {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 110px 30px;
-}
+
 
 /* INICIO DE SECCION MENU DE NAVEGACION */
 .conteiner-header {
@@ -62,23 +57,23 @@ li {
 }
 
 nav,
-.inicio-a {
+.menu {
     transition: 0.3s;
     padding: 10px;
 }
 
 
 
-.hover-color-a:hover {
+.menu-list:hover {
     color: #f7763d;
 }
 
-.hover-contacto-a {
+.menu-contact {
     background: #eb4b06;
     border-radius: 20px;
 }
 
-.hover-contacto-a:hover {
+.menu-contact:hover {
     background: #eb6227;
 }
 
@@ -95,7 +90,7 @@ nav,
     
 }
 
-.conteiner-welcome-text {
+.welcome-text {
     padding: 200px 0px 200px 40px;
 
 }
@@ -114,7 +109,7 @@ p {
     margin: 20px 0px 30px 0px;
 }
 
-.lo-que-hago {
+.button-welcome {
     font-size: 2em;
     border-radius: 30px;;
     padding: 5px 10px;
@@ -122,14 +117,14 @@ p {
     color: white;
 }
 
-.lo-que-hago:hover {
+.button-welcome:hover {
     background: #eb6227;
     transition: 2ms;
 
 }
 
 
-.img-inicio {
+.img-init {
     width: 400px;
     height: 450px;
     margin: 0px 10%;
@@ -139,7 +134,7 @@ p {
 /* FIN DE PRESENTACION */
 
 /* INICIO DE SECCION CONOCIMIENTOS */
-.conteiner-conocimientos-proyecto {
+.conteiner-cards {
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -149,7 +144,7 @@ p {
     margin: auto;
 }
 
-.cards-conocimientos {
+.cards-skills {
     display: flex;
     width: 80%;
     height: 100%;
@@ -176,7 +171,7 @@ p {
     
 }
 
-.iconos-card {
+.icons-card {
     text-align: center;
     font-size: 100px;
     margin: auto;
@@ -186,10 +181,33 @@ p {
     text-align: center;
 }
 
+.fa-html5 {
+    color: #d94a0d;
+}
+
+.fa-css3-alt {
+    color: #2e6ddc;
+}
+
+.fa-sass {
+    color: #d64cc4;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+.fa-react {
+    color: #22ecca;
+}
+
+.fa-git-alt {
+    color: #f34f29;
+}
 /* FIN SECCION MIS  CONOCIMIENTOS */
 
 /* INICIO DE SECCION CITA */
-.conteiner-cita {
+.conteiner-phrase {
     width: 100%;
     height: 600px;
     background-color: whitesmoke;
@@ -202,7 +220,7 @@ p {
     font-size: 300px;
 }
 
-.cita-autor {
+.phrase-author {
     padding: 50px;
 }
 /* FIN DE SECCION CITA */
@@ -219,7 +237,7 @@ p {
     flex-wrap: wrap;
 }
 
-.card-proyectos {
+.card-proyects {
     border: 1px solid blueviolet;
     background-color:  white;
     border-radius: 20px;
@@ -231,19 +249,19 @@ p {
 }
 
 
-.card-proyectos:hover {
+.card-proyects:hover {
     border: 3px solid purple;
     transition: 5;
 }
 
-.imagenes-proyects {
+.img-proyects {
     width: 250px;
     height: 180px;
     border: 1px solid orangered;
     margin: auto;
 }
 
-#portafolio-img {
+#briefcase-img {
     width: 270px;
 }
 /* FIN DE SECCION MIS PROYECTOS */
@@ -274,10 +292,11 @@ p {
 }
 
 /* INICIO SECCION CONTACTAME */
-.redes-a {
+.content {
     display: flex;
     width: 24rem;
-    height: 3rem;
+    height: 4rem;
+    margin-top: 8px;
     padding: 0px 8px;
     border-radius: 100px;
     align-items: center;
@@ -293,12 +312,12 @@ p {
     text-align: center;
 }
 
-.redes-a:hover {
+.content:hover {
     color: #eb4b06;
     transition: 3ms;
 }
 
-.redes-a:hover .icon-redes {
+.content:hover .icon-redes {
     background: #eb4b06;
     transition: 3ms;
     color: aliceblue;
@@ -308,7 +327,7 @@ p {
     transition: 5ms;
     border: none;
     width: 23rem;
-    height: 4rem;
+    height: 3rem;
     box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
 }
 
@@ -320,7 +339,7 @@ p {
     box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
 }
 
-.redes-a:active {
+.content:active {
     transition: 5ms;
     border: none;
     width: 15rem;
@@ -328,7 +347,7 @@ p {
     box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
 }
 
-.redes-a:focus {
+.content:focus {
     transition: 1s;
     border: none;
     width: 15rem;
@@ -375,7 +394,7 @@ p {
     color: #fdfcfc;
     transition: 1ms;
 }
-.texto {
+.text-contact {
     margin: 30px 35px;
 }
 /* FIN SECCION CONTACTAME */
@@ -384,6 +403,10 @@ p {
 .write-me {
     display: block;
     
+}
+
+.text-write-me {
+    margin: 30px 10px;
 }
 
 .conteiner-name-last-name {
@@ -465,6 +488,64 @@ button:hover {
     border: 1px solid #b331df;
     transition: 1ms;
 }
+
+
+input:valid:focus {
+  box-shadow: 0px 0px 20px  #dd1010;
+}
+
+
+
+input:invalid:not(:placeholder-shown):focus {
+    box-shadow:  0px 0px 20px  #05e623;
+}
+
+input[class*="input-email"]:valid:focus {
+    box-shadow: 0px 0px 20px  #30cf08;
+}
+
+.input-email:invalid:not(:placeholder-shown):focus {
+    box-shadow:  0px 0px 20px  #ce1204;
+}
+
+#mensaje:valid:focus {
+    box-shadow: 0px 0px 20px  #30cf08;
+}
+
+.fa-circle-check {
+    color: #05e623;
+}
+
+.fa-circle-xmark {
+    color: #ce1204;
+}
+
+/*input:valid ,
+textarea:valid:focus {
+    box-shadow: rgb(9, 180, 23) 2px 2px 2px 2px, rgb(12, 180, 49) 0px 4px 6px -1px, rgb(9, 216, 20) 2px 2px 2px inset;
+}
+
+textarea:invalid:not(:placeholder-shown):focus {
+  box-shadow: 0px 0px 5px #f5414f;
+}
+
+
+textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid #f5414f;
+}
+
+
+input[required]:invalid:{
+    box-shadow: red 2px 2px 2px 2px, red 0px 4px 6px -1px, red 2px 2px 2px inset;
+}*/
+
+
+
+
+
+
+
+
 /* FIN SECCION  ESCRIBEME  */
 
 /* FIN DE SECCION FORMULARIO */
@@ -498,11 +579,11 @@ i[class*="icon-footer"]:hover {
     background-color: white;
 }
 
-ul[class*="menu-redes"] {
+ul[class*="menu-icons"] {
     margin: 25px 0px;
 }
 
-ul[class*="menu-redes"]:hover {
+ul[class*="menu-icons"]:hover {
 
     border-radius: 100%;
     color: #eb4b06;
