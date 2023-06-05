@@ -24,6 +24,7 @@ body {
     display: flex;
     width: 100%;
     height: 90px;
+    max-width: 1400px;
     background-color: whitesmoke;
     box-shadow: rgb(245 178 2) 0px 5px 15px;
     padding-right: 70px;
@@ -51,7 +52,7 @@ a {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    
+
 }
 
 li {
@@ -89,6 +90,7 @@ nav,
     justify-content: center;
     align-items: center;
     padding: 50px 0px;
+    max-width: 1400px;
 }
 
 .welcome-text {
@@ -98,7 +100,7 @@ nav,
 
 h3 {
     font-size: 3em;
-    
+
 }
 
 h2 {
@@ -112,7 +114,8 @@ p {
 
 .button-welcome {
     font-size: 2em;
-    border-radius: 30px;;
+    border-radius: 30px;
+    ;
     padding: 5px 10px;
     background: #eb4b06;
     color: white;
@@ -153,7 +156,7 @@ p {
     margin: auto;
     flex-wrap: wrap;
     padding-left: 40px;
-    background-color: #05e623;
+    background-color: #113599;
 }
 
 .card:hover {
@@ -163,23 +166,23 @@ p {
 
 .card {
     border: 1px solid blueviolet;
-    background-color:  whitesmoke;
+    background-color: whitesmoke;
     border-radius: 30px;
     width: 230px;
     height: 230px;
     display: flex;
     flex-direction: column;
     margin: 10px;
-    
+
 }
 
 .icons-card {
     text-align: center;
-    font-size: 100px;
+    font-size: 6em;
     margin: auto;
 }
 
-.text{
+.text {
     text-align: center;
 }
 
@@ -206,10 +209,12 @@ p {
 .fa-git-alt {
     color: #f34f29;
 }
+
 /* FIN SECCION MIS  CONOCIMIENTOS */
 
 /* INICIO DE SECCION CITA */
 .conteiner-phrase {
+    max-width: 1400px;
     width: 100%;
     height: 600px;
     background-color: whitesmoke;
@@ -225,6 +230,7 @@ p {
 .phrase-author {
     padding: 50px;
 }
+
 /* FIN DE SECCION CITA */
 
 /* INICIO DE SECCION MIS PROYECTOS */
@@ -241,7 +247,7 @@ p {
 
 .card-proyects {
     border: 1px solid blueviolet;
-    background-color:  white;
+    background-color: white;
     border-radius: 20px;
     width: 305px;
     height: 290px;
@@ -266,6 +272,7 @@ p {
 #briefcase-img {
     width: 270px;
 }
+
 /* FIN DE SECCION MIS PROYECTOS */
 
 /* INICIO DE SECCION FORMULARIO */
@@ -273,6 +280,7 @@ p {
     display: flex;
     width: 100%;
     height: 900px;
+    max-width: 1400px;
     justify-content: center;
     align-items: center;
 }
@@ -378,7 +386,7 @@ p {
     transition: 1ms;
 }
 
-.fa-github-alt{
+.fa-github-alt {
     color: #8807B2;
     font-size: 1.3em;
 }
@@ -388,7 +396,7 @@ p {
     transition: 1ms;
 }
 
-.fa-discord{
+.fa-discord {
     color: #8807B2;
 }
 
@@ -396,15 +404,17 @@ p {
     color: #fdfcfc;
     transition: 1ms;
 }
+
 .text-contact {
     margin: 30px 35px;
 }
+
 /* FIN SECCION CONTACTAME */
 
 /* INICIO SECCION ESCRIBEME */
 .write-me {
     display: block;
-    
+
 }
 
 .text-write-me {
@@ -413,6 +423,7 @@ p {
 
 .conteiner-name-last-name {
     display: flex;
+    max-width: 1100px;
 }
 
 .label-last-name {
@@ -428,6 +439,7 @@ input[placeholder] {
     height: 30px;
     border: none;
 }
+
 #mensaje {
     display: block;
     width: 450px;
@@ -493,25 +505,25 @@ button:hover {
 
 
 input:valid:focus {
-  box-shadow: 0px 0px 20px  #dd1010;
+    box-shadow: 0px 0px 20px #dd1010;
 }
 
 
 
 input:invalid:not(:placeholder-shown):focus {
-    box-shadow:  0px 0px 20px  #05e623;
+    box-shadow: 0px 0px 20px #05e623;
 }
 
 input[class*="input-email"]:valid:focus {
-    box-shadow: 0px 0px 20px  #30cf08;
+    box-shadow: 0px 0px 20px #30cf08;
 }
 
 .input-email:invalid:not(:placeholder-shown):focus {
-    box-shadow:  0px 0px 20px  #ce1204;
+    box-shadow: 0px 0px 20px #ce1204;
 }
 
 #mensaje:valid:focus {
-    box-shadow: 0px 0px 20px  #30cf08;
+    box-shadow: 0px 0px 20px #30cf08;
 }
 
 .fa-circle-check {
@@ -521,25 +533,6 @@ input[class*="input-email"]:valid:focus {
 .fa-circle-xmark {
     color: #ce1204;
 }
-
-/*input:valid ,
-textarea:valid:focus {
-    box-shadow: rgb(9, 180, 23) 2px 2px 2px 2px, rgb(12, 180, 49) 0px 4px 6px -1px, rgb(9, 216, 20) 2px 2px 2px inset;
-}
-
-textarea:invalid:not(:placeholder-shown):focus {
-  box-shadow: 0px 0px 5px #f5414f;
-}
-
-
-textarea:invalid:not(:placeholder-shown) {
-  border: 1px solid #f5414f;
-}
-
-
-input[required]:invalid:{
-    box-shadow: red 2px 2px 2px 2px, red 0px 4px 6px -1px, red 2px 2px 2px inset;
-}*/
 
 
 
@@ -556,6 +549,7 @@ input[required]:invalid:{
 .conteiner-footer {
     width: 100%;
     height: 300px;
+    max-width: 1400px;
     background-color: aliceblue;
     display: flex;
     text-align: center;
@@ -637,9 +631,10 @@ ul[class*="menu-icons"]:hover {
     .img-init {
         margin: 0;
     }
+
     .welcome-text {
         padding: 200px 70px 200px 0px;
-    
+
     }
 }
 
@@ -647,9 +642,10 @@ ul[class*="menu-icons"]:hover {
     .img-init {
         margin: 0;
     }
+
     .welcome-text {
         padding: 200px 70px 200px 0px;
-    
+
     }
 }
 
@@ -657,17 +653,20 @@ ul[class*="menu-icons"]:hover {
     .conteiner-header {
         display: none;
     }
+
     .conteiner-welcome {
         display: block;
         text-align: center;
         padding: 0;
         margin: auto;
     }
+
     .welcome-text {
         padding: 70px 0px;
         margin: 0;
         border: 0;
     }
+
     .img-init {
 
         padding-left: 30px;
@@ -684,39 +683,109 @@ ul[class*="menu-icons"]:hover {
 @media(max-width:988px) {
     .cards-skills { 
         width: 90%;
+        justify-content: center;
     }
 }
 
 @media(max-width:920px) {
-    .cards-skills { 
-        width: 80%;
+    .conteiner-welcome {
+        margin-left: 10%;
+    }
+    .conteiner-cards {
+        margin-left: 60px;
+    }
+
+    .cards-skills {
+        width: 100%;
         margin: auto;
         padding: 0;
-        padding-left: 0px;
         justify-content: center;
+        background-color: #30cf08;
+    }
+    .card {
+        width: 330px;
+        height: 330px;
+    }
+    .conteiner-phrase {
+        background-color: #ce1204;
+        
+        width: 107%;
+        max-width: none;
+    }
+    .phrase-text {
+        text-align: center;
     }
 }
 
-@media(min-width:780px) {
-    .cards-skills {
-        width: 100%;
-        max-width: none;
-    }
+@media(max-width:780px) {
     .conteiner-phrase {
-        width: 101%;
-        
+        width: 110%;
+        background-color: #22ecca;
     }
     .conteiner-cards {
-        justify-content: center;
-        max-width: none;
-        text-align: center;
-        margin: auto;
+        margin-left: 8%;
+    }
+}
+
+@media(max-width:720px) {
+    .conteiner-cards {
+        margin-left: 8%;
+    }
+    .text {
+        margin-left: 16%;
+    }
+    .cards-skills {
+        width: 110%;
+        margin-left: 5%;
+        padding: o;
+    }
+    .conteiner-phrase {
+        width: 115%;
+        background-color: #22ecca;
+    }
+    .fa-quote-right {
+        font-size: 250px;
+        margin-top: 50px;
         align-items: center;
     }
+    
+    .phrase-author {
+        margin-top: 50px;
+    }
+    
+}
+
+@media(max-width:700px) {
+    .conteiner-cards {
+        margin-left: 0;
+    }
+    .text {
+        margin-left: 14%;
+    }
+    .cards-skills {
+        margin-left: 3%;
+        background-color:#b331df;
+    }
+    .conteiner-phrase {
+        margin-left: 0;
+    }
+}
+
+@media(max-width:660px) {
+    .conteiner-welcome {
+        margin-left: 30%;
+    }
+    .conteiner-cards {
+        margin-left: 10%;
+    }
+    .cards-skills {
+        width: 120%;
+    }
     h2 {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+        font-size: 5em;
+    }
+    
+    .conteiner-phrase {
+        width: 133%;
     }
 }
