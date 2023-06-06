@@ -18,9 +18,14 @@
     <!-- FIN DE ICONO -->
 
     <!-- INICIO DE IMAGEN EN LA PESTAÑA DE NAVEGACION -->
-    <link rel="icon" type="image/png" href="imagenes/to">
-
-    
+    <link rel="icon" type="image/png" href="imagenes/planetita.png">
+    <!-- INICIO DE OPENGRAPH PROTOCOL -->
+    <meta properity="og:tittle" content="mi primer pagina web">
+    <meta properity="og:description" content="es una recopilacion de  mis conocimientos y proyectos como programadora">
+    <meta properity="og:image" content="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg">
+    <meta properity="og:site-name" content="portafolio">
+    <meta properity="og:type" content="website">
+    <!-- FIN DE OPENGRAPH PROTOCOL -->
 </head>
 
 <body>
@@ -29,22 +34,22 @@
         <nav class="nav-header">
             <ul>
                 <li>
-                    <a href="#" class="menu menu-list">
+                    <a href="#presentacion" class="menu menu-list">
                         HOLA
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu menu-list">
+                    <a href="#conocimientos" class="menu menu-list">
                         CONOCIMIENTOS
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu menu-list">
+                    <a href="#proyectos" class="menu menu-list">
                         PROYECTOS
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menu menu-contact">
+                    <a href="#contactame" class="menu menu-contact">
                         CONTACTO
                     </a>
                 </li>
@@ -53,8 +58,8 @@
     </header>
     <!-- FIN DE LA SECCION MENU DE NAVEGACION -->
 
-    <!-- INICIO DE SECCION BIENVENIDA -->
-    <section class="conteiner-welcome">
+    <!-- INICIO DE SECCION PRESENTACION -->
+    <section class="conteiner-welcome" id="presentacion">
         <div class="welcome-text">
             <h3>
                 ¡hola! soy
@@ -72,55 +77,55 @@
         <img src="imagenes/planet.gif" alt="imagen git en movimiento de una galaxia y el planeta tierra"
             class="img-init">
     </section>
-    <!-- FIN DE LA SECCION BIENVENIDA -->
+    <!-- FIN DE LA SECCION PRESENTACION -->
 
     <!-- INICIO DE SECCION CONOCIMIENTOS -->
+    <a name="conocimientos"></a>
     <section class="conteiner-cards">
         <div class="text">
-            <h2>
+            <h2 class="tittles">
                 Mis conocimientos
             </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Tempore impedit molestias odio deleniti
-                nulla <br> aliquid ut quis. Doloribus, temporibus reprehenderit.
+            <p class="explanation-text">
+                estos son los conocimientos que he adquirido con paso del tiempo y mucha practica.
             </p>
         </div>
         <div class="cards-skills">
             <article class="card">
                 <i class=" icons-card fa-brands fa-html5"></i>
-                <p class="text min-text">
+                <p class="text">
                     HTML5
                 </p>
 
             </article>
             <article class="card">
                 <i class="icons-card  fa-brands fa-css3-alt"></i>
-                <p class="text min-text">
+                <p class="text">
                     CSS3
                 </p>
             </article>
             <article class="card">
                 <i class="icons-card  fa-brands fa-sass"></i>
-                <p class="text  min-text">
+                <p class="text">
                     sass
                 </p>
             </article>
             <article class="card">
                 <i class="icons-card  fa-brands fa-js"></i>
-                <p class="text min-text">
+                <p class="text">
                     javascript
                 </p>
 
             </article>
             <article class="card">
                 <i class="icons-card fa-brands fa-react"></i>
-                <p class="text min-text">
+                <p class="text">
                     React
                 </p>
             </article>
             <article class="card">
                 <i class="icons-card fa-brands fa-git-alt"></i>
-                <p class="text min-text">
+                <p class="text">
                     GIT
                 </p>
             </article>
@@ -143,15 +148,13 @@
     <!-- FIN DE LA SECCION CITA -->
 
     <!-- INICIO DE LA SECCION MIS PROYECTOS -->
-    <section class="conteiner-cards">
-        <a style="misconocimientos"></a>
+    <section id="proyectos" class="conteiner-cards">
         <div class="text">
-            <h3>
+            <h2>
                 mis proyectos
-            </h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Tempore impedit molestias odio deleniti
-                nulla <br> aliquid ut quis. Doloribus, temporibus reprehenderit.
+            </h2>
+            <p class="explanation-text">
+                estos son los proyectos que he hecho con mucho esfuerzo.
             </p>
         </div>
         <div class="conteiner-cards-proyects">
@@ -159,7 +162,7 @@
                 <img src="imagenes/portafolio.png"
                     alt="IMAGEN DE LA CAPTURA DE PANTALLA DEL PROYECTO (CAPTURA DE ESTA MISMA PAGINA WEB"
                     class="img-proyects" id="briefcase-img">
-                <p class="text min-text">
+                <p class="text">
                     Portafolio
                 </p>
             </a>
@@ -167,14 +170,14 @@
             <a class="card-proyects">
                 <img src="imagenes/generador de memes.png"
                     alt="IMAGEN DE UNA CARA GIGANTE SONRIENTE Y DOS PERSONAS ABRAZANDOLA" class="img-proyects">
-                <p class="text min-text">
+                <p class="text">
                     Generador de memes
                 </p>
             </a>
 
             <a class="card-proyects">
                 <img src="imagenes/match3.png" alt="IMAGEN DE UN CHICO JUGANDO CON UN YOSTICK" class="img-proyects">
-                <p class="text min-text">
+                <p class="text">
                     Match 3
                 </p>
             </a>
@@ -182,28 +185,28 @@
                 <img src="imagenes/controlador de gastos.png"
                     alt="IMAGEN DE UNA ALCANCIA DE CHANCHITO GIGANTE Y UNA PERSONA CALBALGANDOLO CON UNA MONEDA EN LA MANO"
                     class="img-proyects">
-                <p class="text min-text">
+                <p class="text">
                     Controlador de gastos
                 </p>
             </a>
             <a class="card-proyects">
                 <img src="imagenes/administrador de reuniones.png"
                     alt="IMAGEN DE TRES PESONAS EN UNA REUNION TOMANDO CAFE" class="img-proyects">
-                <p class="text min-text">
+                <p class="text">
                     Administrador de reuniones
                 </p>
             </a>
             <a class="card-proyects">
                 <img src="imagenes/todo app.png" alt="IMAGEN DE UN CELULAR GIGANTE CON UNA PERSONA TOCANDO LA PANTALLA"
                     class="img-proyects">
-                <p class="text min-text">
+                <p class="text">
                     Todo app
                 </p>
             </a>
             <a class="card-proyects">
                 <img src="imagenes/buscador de peliculas.png"
                     alt="IMAGEN DE DOS PERSONAS SENTADAS EN UN SOFA Y VIENDO UNA PELICULA" class="img-proyects">
-                <p class="text min-text">
+                <p class="text">
                     Buscador de películas
                 </p>
             </a>
@@ -212,11 +215,11 @@
     <!-- FIN DE LA SECCION MIS PROYECTOS -->
 
     <!-- INICIO DE LA SECCION CONTACTAME -->
-    <section class="conteiner-contact-write-me">
+    <section class="conteiner-contact-write-me" id="contactame">
         <div class="contact-write-me">
             <!-- SECCION CONTACTAME -->
             <section class="contact">
-                <h3 class="text-contact">
+                <h3>
                     contactame
                 </h3>
                 <p class="text-contact">
@@ -250,8 +253,6 @@
                     <div class="conteiner-name-last-name">
                         <label class="label-mane">
                             Nombre *
-                            <i class="icon-valid fa-regular fa-circle-check"></i>
-                            <i class="icon-invalid fa-regular fa-circle-xmark"></i>
                             <input class="input-name" required type="text" pattern="[a-z]" placeholder="p.ej:Ada">
                         </label>
                         <label class="label-last-name">
@@ -282,22 +283,22 @@
         <div>
             <ul class="menu-footer">
                 <li>
-                    <a href="#">
+                    <a href="#presentacion">
                         HOLA
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#conocimientos">
                         CONOCIMIENTOS
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#proyecto">
                         PROYECTO
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#contacto">
                         CONTACTO
                     </a>
                 </li>

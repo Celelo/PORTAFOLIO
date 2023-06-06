@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', sans-serif , 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden !important;
     overflow: auto;
 }
@@ -79,7 +79,6 @@ nav,
     background: #eb6227;
 }
 
-
 /* FIN DE SECCION MENU DE NAVEGACION*/
 
 /* INICIO DE SECCION PRESENTACION */
@@ -149,19 +148,28 @@ p {
 
 .cards-skills {
     display: flex;
-    width: 80%;
+    width: 65%;
     height: 100%;
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
-    background-color: #113599;
     justify-content: space-between;
 }
 
 .card:hover {
-    border: 3px solid purple;
-    transition: 5;
+    box-shadow: 0px 0px 20px rgb(243 236 237);
+    transition: 5ms;
 }
+
+.card:active {
+    box-shadow: 0px 0px 20px rgb(243 236 237);
+    transition: 5ms;
+} 
+
+.card:focus {
+    box-shadow: 0px 0px 20px rgb(243 236 237);
+    transition: 5ms;
+} 
 
 .card {
     border: 1px solid blueviolet;
@@ -184,6 +192,10 @@ p {
 
 .text {
     text-align: center;
+}
+
+.explanation-text {
+    color: white;
 }
 
 .fa-html5 {
@@ -213,6 +225,7 @@ p {
 /* FIN SECCION MIS  CONOCIMIENTOS */
 
 /* INICIO DE SECCION CITA */
+
 .conteiner-phrase {
     max-width: 1400px;
     width: 100%;
@@ -237,13 +250,12 @@ p {
 
 .conteiner-cards-proyects {
     display: flex;
-    width: 90%;
+    width: 88%;
     height: 100%;
     max-width: 1100px;
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
-    background-color: #2e6ddc;
     justify-content: space-between;
 }
 
@@ -260,9 +272,19 @@ p {
 
 
 .card-proyects:hover {
-    border: 3px solid purple;
-    transition: 5;
+    box-shadow: 0px 0px 20px rgb(243 236 237);
+    transition: 5ms;
 }
+
+.card-proyects:active {
+    box-shadow: 0px 0px 20px rgb(243 236 237);
+    transition: 5ms;
+} 
+
+.card-proyects:focus {
+    box-shadow: 0px 0px 20px rgb(243 236 237);
+    transition: 5ms;
+} 
 
 .img-proyects {
     width: 250px;
@@ -278,6 +300,7 @@ p {
 /* FIN DE SECCION MIS PROYECTOS */
 
 /* INICIO DE SECCION FORMULARIO */
+
 .conteiner-contact-write-me {
     display: flex;
     width: 100%;
@@ -304,6 +327,7 @@ p {
 }
 
 /* INICIO SECCION CONTACTAME */
+
 .content {
     display: flex;
     width: 24rem;
@@ -414,6 +438,7 @@ p {
 /* FIN SECCION CONTACTAME */
 
 /* INICIO SECCION ESCRIBEME */
+
 .write-me {
     display: block;
 
@@ -454,7 +479,7 @@ input[placeholder] {
 
 #mensaje:focus {
     outline: 2px rgb(244 111 66);
-    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+    box-shadow: 0px 0px 20px rgb(155 73 183);
     border: none;
     transition: 1ms;
 }
@@ -466,7 +491,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: 2px rgb(244 111 66);
-    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+    box-shadow: 0px 0px 20px rgb(155 73 183);
     border: none;
     transition: 1ms;
 }
@@ -474,11 +499,12 @@ input[type="text"]:focus {
 input[type="email"] {
     padding: 20px;
     border-radius: 20px;
+    width: 80%;
 }
 
 input[type="email"]:focus {
     outline: 2px rgb(244 111 66);
-    box-shadow: rgb(244 111 66) 2px 2px 2px 2px, rgb(244 111 66) 0px 4px 6px -1px, rgb(244 111 66) 2px 2px 2px inset;
+    box-shadow: 0px 0px 20px rgb(155 73 183);
     border: none;
     transition: 1ms;
 }
@@ -505,12 +531,9 @@ button:hover {
     transition: 1ms;
 }
 
-
 input:valid:focus {
     box-shadow: 0px 0px 20px #dd1010;
 }
-
-
 
 input:invalid:not(:placeholder-shown):focus {
     box-shadow: 0px 0px 20px #05e623;
@@ -535,19 +558,13 @@ input[class*="input-email"]:valid:focus {
 .fa-circle-xmark {
     color: #ce1204;
 }
-
-
-
-
-
-
-
-
 /* FIN SECCION  ESCRIBEME  */
 
 /* FIN DE SECCION FORMULARIO */
 
+
 /* INICIO DE SECCION FOOTER */
+
 .conteiner-footer {
     width: 100%;
     height: 300px;
@@ -724,7 +741,6 @@ ul[class*="menu-icons"]:hover {
 
     .cards-skills {
         width: 80%;
-;
         background-color: #30cf08;
     }
 
@@ -744,6 +760,7 @@ ul[class*="menu-icons"]:hover {
         text-align: center;
     }
 }
+
 
 @media(max-width:900px) {
     .conteiner-cards-proyects {
